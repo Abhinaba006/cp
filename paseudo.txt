@@ -1,0 +1,11 @@
+procedure ReverseHalfLinkedList(linkedlist head, length l)
+    for i to n/2:
+        // traversing half of the linked list
+        head := head.next
+    set lastNode:=head, prev:=null, curr:=head.next
+    while curr is not equal null 
+        set next := curr.next
+        set curr.next := prev
+        set curr:=next
+    // connecting the broken linked
+    set lastNode:=prev
